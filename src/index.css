@@ -68,5 +68,6 @@ button {
     .section-title {
         font-size: 37px;
         text-align: center;
+        margin-bottom: 60px;
     }
 }

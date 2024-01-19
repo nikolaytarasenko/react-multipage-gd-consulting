@@ -49,7 +49,7 @@ const HomeServices = () => {
                     </Button>
                 </div>
             </div>
-            <div className={styles.row}>
+            <div className={`${styles.row} ${styles.lastRow}`}>
                 <div className={styles.imgWrapper}>
                     <img src={img3} alt="Financial Consulting" />
                 </div>
