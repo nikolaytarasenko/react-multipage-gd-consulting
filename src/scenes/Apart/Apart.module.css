@@ -1,5 +1,5 @@
 .title {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 .cards {
@@ -39,6 +39,10 @@
 }
 
 @media screen and (max-width: 991.98px) {
+    .title {
+        margin-bottom: 80px;
+    }
+
     .cards {
         display: grid;
         grid-template-columns: 1fr;
