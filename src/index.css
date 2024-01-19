@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', Arial, sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'EB Garamond', Arial, serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+@media screen and (max-width: 1720px) {
+    .container {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .container {
+        padding: 0 20px;
+    }
+}
