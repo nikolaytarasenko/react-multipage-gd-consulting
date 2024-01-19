@@ -1,5 +1,6 @@
 import HomeHero from '../scenes/HomeHero/HomeHero'
 import WhatWeDo from '../scenes/WhatWeDo/WhatWeDo'
+import Apart from '../scenes/Apart/Apart'
 
 const HomePage = () => {
     return (
@@ -8,6 +9,9 @@ const HomePage = () => {
                 <HomeHero />
             </div>
             <WhatWeDo />
+            <div className="container">
+                <Apart />
+            </div>
         </>
     )
 }
