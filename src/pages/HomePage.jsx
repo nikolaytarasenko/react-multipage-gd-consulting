@@ -1,6 +1,10 @@
+import HomeHero from '../scenes/HomeHero/HomeHero'
+
 const HomePage = () => {
     return (
-        <h1>Home page</h1>
+        <div className="container">
+            <HomeHero />
+        </div>
     )
 }
 

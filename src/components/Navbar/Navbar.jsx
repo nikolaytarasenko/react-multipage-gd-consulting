@@ -6,7 +6,7 @@ import { CgMenuRightAlt } from 'react-icons/cg'
 import { IoClose } from 'react-icons/io5'
 
 const Navbar = () => {
-    const [isMenuOpened, setMenuOpened] = useState(true)
+    const [isMenuOpened, setMenuOpened] = useState(false)
 
     const handleOpen = () => {
         setMenuOpened(prev => !prev)

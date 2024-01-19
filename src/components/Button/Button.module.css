@@ -1,0 +1,33 @@
+.button {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 17px 57px;
+    border-radius: 32px;
+    transition: 0.15s ease-out;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.transparent {
+    background: transparent;
+    border: 1px solid #000;
+}
+
+.transparent:hover {
+    background: #000;
+    color: #fff;
+}
+
+.white {
+    padding: 17px 32px;
+    background: #fff;
+}
+
+.white:hover {
+    background: #d1d1d1;
+}

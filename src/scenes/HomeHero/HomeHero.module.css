@@ -1,0 +1,148 @@
+.hero {
+    padding-top: 40px!important;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.left {
+    flex: 1;
+    min-height: 730px;
+    border-radius: 48px;
+    background: #F6F6F6 url("../../assets/home-hero.png") right 100px bottom 0 no-repeat;
+    background-size: 654px 634px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.heading {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    margin-bottom: 32px;
+}
+
+.description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 60%;
+}
+
+.right {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.statsBox {
+    padding: 24px 50px;
+    border-top-right-radius: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    min-height: 177px;
+}
+
+.statsFirst {
+    background-color: #EBF3FF;
+}
+
+.statsTitle {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.44px;
+}
+
+.statsDigit {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    padding-left: 10px;
+}
+
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #465976;
+    padding: 56px 50px 48px;
+    border-radius: 48px 48px 48px 0;
+}
+
+.contactTitle {
+    color: #fff;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        justify-content: flex-start;
+        align-items: center;
+        background-size: 220px;
+        background-position: center bottom;
+        text-align: center;
+    }
+
+    .heading,
+    .description {
+        max-width: 100%;
+    }
+
+    .description {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .title {
+        font-size: 37px;
+        line-height: normal;
+    }
+
+    .statsBox {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .contact {
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}
