@@ -29,7 +29,7 @@ const HomeHero = () => {
                     </div>
                     <div className={styles.contact}>
                         <h2 className={styles.contactTitle}>Get quick free consultation</h2>
-                        <Button style="white">
+                        <Button style="white" type="link" link="/contact">
                             <BiMessageRounded size={25} />
                             Contact Us
                         </Button>
