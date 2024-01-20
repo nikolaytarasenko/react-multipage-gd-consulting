@@ -4,6 +4,7 @@ import Apart from '../scenes/Apart/Apart'
 import HomeServices from '../scenes/HomeServices/HomeServices'
 import Experience from '../scenes/Experience/Experience'
 import Principles from '../scenes/Principles/Principles'
+import Decor from '../scenes/Decor/Decor'
 
 const HomePage = () => {
     return (
@@ -18,6 +19,7 @@ const HomePage = () => {
                 <Experience />
                 <Principles />
             </div>
+            <Decor />
         </>
     )
 }
