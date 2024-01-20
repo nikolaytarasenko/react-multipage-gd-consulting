@@ -3,6 +3,7 @@ import WhatWeDo from '../scenes/WhatWeDo/WhatWeDo'
 import Apart from '../scenes/Apart/Apart'
 import HomeServices from '../scenes/HomeServices/HomeServices'
 import Experience from '../scenes/Experience/Experience'
+import Principles from '../scenes/Principles/Principles'
 
 const HomePage = () => {
     return (
@@ -15,6 +16,7 @@ const HomePage = () => {
                 <Apart />
                 <HomeServices />
                 <Experience />
+                <Principles />
             </div>
         </>
     )
