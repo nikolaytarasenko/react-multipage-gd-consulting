@@ -6,6 +6,8 @@ import Experience from '../scenes/Experience/Experience'
 import Principles from '../scenes/Principles/Principles'
 import Decor from '../scenes/Decor/Decor'
 import Clients from '../scenes/Clients/Clients'
+import WorkTogether from '../scenes/WorkTogether/WorkTogether'
+import Social from '../scenes/Social/Social'
 
 const HomePage = () => {
     return (
@@ -23,6 +25,11 @@ const HomePage = () => {
             <Decor />
             <div className="container">
                 <Clients />
+                <WorkTogether />
+            </div>
+            <Decor />
+            <div className="container">
+                <Social />
             </div>
         </>
     )

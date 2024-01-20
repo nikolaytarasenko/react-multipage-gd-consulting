@@ -37,3 +37,33 @@
         font-size: 18px;
     }
 }
+
+.green {
+    background: #71CF5B;
+    color: #fff;
+    min-width: 242px;
+}
+
+.green:hover {
+    background: #55ab41;
+}
+
+.blue {
+    background: #53AAE3;
+    color: #fff;
+    min-width: 242px;
+}
+
+.blue:hover {
+    background: #408dbf;
+}
+
+.silver {
+    background: #A0A8B5;
+    color: #fff;
+    min-width: 242px;
+}
+
+.silver:hover {
+    background: #828a95;
+}
