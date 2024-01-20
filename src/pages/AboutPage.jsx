@@ -1,6 +1,12 @@
+import AboutHero from '../scenes/AboutHero/AboutHero'
+
 const AboutPage = () => {
     return (
-        <h1>About page</h1>
+        <>
+            <div className="container">
+                <AboutHero />
+            </div>
+        </>
     )
 }
 
