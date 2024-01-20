@@ -63,6 +63,8 @@
 
     .text {
         margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 32px;
     }
 
     .title {

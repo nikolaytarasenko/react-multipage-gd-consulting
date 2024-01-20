@@ -5,6 +5,7 @@ import HomeServices from '../scenes/HomeServices/HomeServices'
 import Experience from '../scenes/Experience/Experience'
 import Principles from '../scenes/Principles/Principles'
 import Decor from '../scenes/Decor/Decor'
+import Clients from '../scenes/Clients/Clients'
 
 const HomePage = () => {
     return (
@@ -20,6 +21,9 @@ const HomePage = () => {
                 <Principles />
             </div>
             <Decor />
+            <div className="container">
+                <Clients />
+            </div>
         </>
     )
 }
