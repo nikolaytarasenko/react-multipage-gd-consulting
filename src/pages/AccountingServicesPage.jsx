@@ -1,11 +1,12 @@
 import CommonHero from '../components/CommonHero/CommonHero'
 import AccountingServices from '../scenes/AccountingServices/AccountingServices'
-import Solutions from '../scenes/Solutions/Solutions'
+import CommonSolutions from '../components/CommonSolutions/CommonSolutions'
 import CloseTasks from '../scenes/CloseTasks/CloseTasks'
 import Advantages from '../scenes/Advantages/Advantages'
 import Consultation from '../scenes/Consultation/Consultation'
 import Social from '../scenes/Social/Social'
 import heroImage from '../assets/acc-services-hero.png'
+import solutionsImg from '../assets/solutions.png'
 
 const AccountingServicesPage = () => {
     const heroSectionData = {
@@ -17,13 +18,21 @@ const AccountingServicesPage = () => {
         image: heroImage
     }
 
+    const solutionsSectionData = {
+        title: 'We offer solutions for your business',
+        list: ['Managing full company’s accounting', 'Partial accounting with “VAT”, “wage expenses” etc', 'Accounting outsourcing', 'Financial statement analysis, interpretation, and evaluation', 'Advising on emerging tax issues', 'Assistance in resolving business disputes'],
+        image: solutionsImg
+    }
+
     return (
         <div className="container">
             <CommonHero
                 data={heroSectionData}
             />
             <AccountingServices />
-            <Solutions />
+            <CommonSolutions
+                data={solutionsSectionData}
+            />
             <CloseTasks />
             <Advantages />
             <Consultation />
