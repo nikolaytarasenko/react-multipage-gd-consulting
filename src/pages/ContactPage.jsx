@@ -1,6 +1,12 @@
+import ContactHero from '../scenes/ContactHero/ContactHero'
+import Social from '../scenes/Social/Social'
+
 const ContactPage = () => {
     return (
-        <h1>Contact page</h1>
+        <div className="container">
+            <ContactHero />
+            <Social />
+        </div>
     )
 }
 
