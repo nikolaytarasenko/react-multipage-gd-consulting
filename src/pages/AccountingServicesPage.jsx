@@ -2,7 +2,7 @@ import CommonHero from '../components/CommonHero/CommonHero'
 import AccountingServices from '../scenes/AccountingServices/AccountingServices'
 import CommonSolutions from '../components/CommonSolutions/CommonSolutions'
 import CloseTasks from '../scenes/CloseTasks/CloseTasks'
-import Advantages from '../scenes/Advantages/Advantages'
+import CommonAdvantages from '../components/CommonAdvantages/CommonAdvantages'
 import Consultation from '../scenes/Consultation/Consultation'
 import Social from '../scenes/Social/Social'
 import heroImage from '../assets/acc-services-hero.png'
@@ -24,6 +24,16 @@ const AccountingServicesPage = () => {
         image: solutionsImg
     }
 
+    const advantagesSectionData = {
+        description: 'Conducting accounting services in our company has a number of significant advantages, especially if your business does not belong to the large category.',
+        list: [
+            'The payment for accounting services is significantly less than the salary of a qualified accountant',
+            'G&D Consulting will be responsible for organizing accounting, searching for personnel for accounting, and other related tasks',
+            'G&D Consulting specialists are highly qualified in accounting & bookeeping',
+            'In addition to accounting support, you can count on qualified legal assistance in G&D Consulting',
+        ]
+    }
+
     return (
         <div className="container">
             <CommonHero
@@ -34,7 +44,9 @@ const AccountingServicesPage = () => {
                 data={solutionsSectionData}
             />
             <CloseTasks />
-            <Advantages />
+            <CommonAdvantages
+                data={advantagesSectionData}
+            />
             <Consultation />
             <Social />
         </div>
