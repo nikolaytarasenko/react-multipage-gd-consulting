@@ -1,4 +1,5 @@
 import CommonHero from '../components/CommonHero/CommonHero'
+import AccountingServices from '../scenes/AccountingServices/AccountingServices'
 import heroImage from '../assets/acc-services-hero.png'
 
 const AccountingServicesPage = () => {
@@ -16,6 +17,7 @@ const AccountingServicesPage = () => {
             <CommonHero
                 data={heroSectionData}
             />
+            <AccountingServices />
         </div>
     )
 }
