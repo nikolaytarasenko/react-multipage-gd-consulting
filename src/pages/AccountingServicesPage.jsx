@@ -1,6 +1,7 @@
 import CommonHero from '../components/CommonHero/CommonHero'
 import AccountingServices from '../scenes/AccountingServices/AccountingServices'
 import Solutions from '../scenes/Solutions/Solutions'
+import CloseTasks from '../scenes/CloseTasks/CloseTasks'
 import heroImage from '../assets/acc-services-hero.png'
 
 const AccountingServicesPage = () => {
@@ -20,6 +21,7 @@ const AccountingServicesPage = () => {
             />
             <AccountingServices />
             <Solutions />
+            <CloseTasks />
         </div>
     )
 }
