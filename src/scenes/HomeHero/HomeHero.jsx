@@ -2,6 +2,7 @@ import styles from './HomeHero.module.css'
 import Button from '../../components/Button/Button'
 import homeStats from '../../assets/home-stats.png'
 import { BiMessageRounded } from 'react-icons/bi'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const HomeHero = () => {
     return (
@@ -12,9 +13,11 @@ const HomeHero = () => {
                         <h1 className={styles.title}>Take control of your finances with our reliable services</h1>
                         <p className={styles.description}>Financial planning, tax consultancy and accounting solutions</p>
                     </div>
-                    <Button style="transparent">
-                        Learn more
-                    </Button>
+                    <AnchorLink href="#services" offset="50">
+                        <Button style="transparent" type="button">
+                            Learn more
+                        </Button>
+                    </AnchorLink>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.stats}>

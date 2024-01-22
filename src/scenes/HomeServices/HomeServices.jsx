@@ -7,7 +7,7 @@ import { IoIosArrowRoundForward } from 'react-icons/io'
 
 const HomeServices = () => {
     return (
-        <div className="section">
+        <div id="services" className="section">
             <h2 className={`section-title ${styles.title}`}>Services we provide</h2>
             <div className={styles.row}>
                 <div className={styles.imgWrapper}>
