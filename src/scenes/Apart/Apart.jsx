@@ -1,11 +1,15 @@
+import { useContext } from 'react'
 import styles from './Apart.module.css'
 import icon1 from '../../assets/apart-icon-1.png'
 import icon2 from '../../assets/apart-icon-2.png'
 import icon3 from '../../assets/apart-icon-3.png'
 import Button from '../../components/Button/Button'
 import { IoIosArrowRoundForward } from 'react-icons/io'
+import { AppContext } from '../../context/Context'
 
 const Apart = () => {
+    const { toggleModal } = useContext(AppContext)
+
     return (
         <div className="section">
             <h2 className={`section-title ${styles.title}`}>What sets us apart</h2>
@@ -27,7 +31,7 @@ const Apart = () => {
                 </div>
             </div>
             <div className={styles.buttonWrapper}>
-                <Button style="transparent" type="link" link="/contact">
+                <Button style="transparent" type="button" onClick={toggleModal}>
                     Get free consultations
                     <IoIosArrowRoundForward size={30} />
                 </Button>

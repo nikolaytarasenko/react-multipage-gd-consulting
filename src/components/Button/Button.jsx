@@ -1,12 +1,12 @@
 import styles from './Button.module.css'
 import { Link } from 'react-router-dom'
 
-const Button = ({ style, type, link, children }) => {
+const Button = ({ style, type, link, onClick, children }) => {
 
     return (
         <>
             {type === 'button' ? (
-                <button className={`${styles.button} ${styles[style]}`}>
+                <button className={`${styles.button} ${styles[style]}`} onClick={() => onClick()}>
                     {children}
                 </button>
             ) : (

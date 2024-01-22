@@ -1,10 +1,14 @@
+import { useContext } from 'react'
 import styles from './AboutHero.module.css'
 import decorImg from '../../assets/what-we-do-decor-3.png'
 import aboutImg1 from '../../assets/about-img-1.png'
 import aboutImg2 from '../../assets/about-img-2.png'
 import Button from '../../components/Button/Button'
+import { AppContext } from '../../context/Context'
 
 const AboutHero = () => {
+    const { toggleModal } = useContext(AppContext)
+
     return (
         <div className="section">
             <div className={styles.row}>
@@ -28,7 +32,7 @@ const AboutHero = () => {
                     <h2 className={styles.name}>We implement your business ideas and plans with the help of G&D Consulting</h2>
                     <p className={styles.text}>We offer a full range of professional services, including accounting, consulting, tax and audit support, as well as legal advice. We specialize in advising on business creation and corporate tax regulations, drawing on a deep understanding of the local market and industry insights.</p>
                     <div className={styles.buttonWrapper}>
-                        <Button style="transparent" type="link" link="/contact">
+                        <Button style="transparent" type="button" onClick={toggleModal}>
                             Submit your application
                         </Button>
                     </div>

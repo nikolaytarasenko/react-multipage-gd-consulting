@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './scenes/Footer/Footer'
@@ -7,8 +8,12 @@ import ContactPage from './pages/ContactPage'
 import AccountingServicesPage from './pages/AccountingServicesPage'
 import TaxConsultingPage from './pages/TaxConsultingPage'
 import FinancialConsultingPage from './pages/FinancialConsultingPage'
+import Modal from './components/Modal/Modal'
+import { AppContext } from './context/Context'
 
 const App = () => {
+    const { isModalOpen } = useContext(AppContext)
+
     return (
         <>
             <div className="page">
@@ -24,6 +29,7 @@ const App = () => {
                     </Routes>
                 </main>
                 <Footer />
+                {isModalOpen && <Modal />}
             </div>
         </>
     )

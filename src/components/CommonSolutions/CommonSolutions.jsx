@@ -1,8 +1,12 @@
+import { useContext } from 'react'
 import styles from './CommonSolutions.module.css'
 import Button from '../Button/Button.jsx'
 import { IoIosArrowRoundForward } from 'react-icons/io'
+import { AppContext } from '../../context/Context'
 
 const CommonSolutions = ({ data: { title, list, image } }) => {
+    const { toggleModal } = useContext(AppContext)
+
     return (
         <div className="section">
             <div className={styles.row}>
@@ -19,7 +23,7 @@ const CommonSolutions = ({ data: { title, list, image } }) => {
                 </div>
             </div>
             <div className={styles.buttonWrapper}>
-                <Button style="black" type="link" link="/contact">
+                <Button style="black" type="button" onClick={toggleModal}>
                     Get free consultations
                     <IoIosArrowRoundForward size={35} color="#fff" />
                 </Button>
